@@ -4,7 +4,9 @@ function decode(s::Array{T, 1}) where T <: Number
     index = 1;
     for i in 1:number_of_rows
         for j in 1:number_of_cols
-            if s[index] == 1
+            if s[index] == -1
+                vis[i, j] = 0;
+            else
                 vis[i, j] = 1;
             end
             index += 1;

@@ -1,5 +1,5 @@
 #throw(ErrorException("Oppps! No methods defined in src/Types.jl. What should you do here?"))
-mutable struct MyClassicalHopfieldNetworkModel <: AbstractHopfieldNetworkModel
+mutable struct MyClassicalHopfieldNetworkModel
     W::Array{<:Number, 2}
     b::Array{<:Number, 1}
     energy::Dict{Int64, Float32}
